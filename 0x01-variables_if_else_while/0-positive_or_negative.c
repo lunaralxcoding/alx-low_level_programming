@@ -1,55 +1,22 @@
-#include <stdlib.h>
-
-#include <time.h>
-
-#include <stdio.h>
-
-
+#include<stdio.h>
 /**
-
- * main - Determines if a number is positive, negative or zero.
-
+ * main - A program that prints the numbers from 0 to 9 then alphabit
  *
-
- * Return: Always 0 (Success)
-
+ * Return: Always 0 (success)
  */
-
 int main(void)
-
 {
+        int i;
 
-        int n;
-
-
-        srand(time(0));
-
-        n = rand() - RAND_MAX / 2;
-
-        if (n > 0)
-
+        for (i = 48; i < 58; i++)
+{
+        putchar(i);
+        if (i != 57)
         {
-
-                printf("%d is positive\n", n);
-
+                putchar(',');
+                putchar(' ');
         }
-
-        else if (n == 0)
-
-        {
-
-                printf("%d is zero\n", n);
-
-        }
-
-        else
-
-        {
-
-                printf("%d is negative\n", n);
-
-        }
-
-        return (0);
-
+}
+putchar('\n');
+return (0);
 }
