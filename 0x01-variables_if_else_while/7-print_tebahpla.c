@@ -1,4 +1,4 @@
-#include<stdio.h>
+ #include <stdio.h>
 /**
  * main - A program that prints the numbers from 0 to 9
  *
@@ -13,7 +13,6 @@ int main(void)
 {
 	putchar(alp[i]);
 }
-	putchar('\n');
-	
-	return (0);
+putchar('\n');
+return (0);
 }
